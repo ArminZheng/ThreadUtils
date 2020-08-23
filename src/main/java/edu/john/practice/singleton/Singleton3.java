@@ -1,10 +1,10 @@
-package edu.john.practice;
+package edu.john.practice.singleton;
 
 import java.io.IOException;
 import java.util.Properties;
 
 /**
- * 第一种：急性子式
+ * 第一种：急性子式 3/3
  *
  * 静态代码块：也是在类加载和初始化的时候，被创建
  * 适合复杂实例化的情况

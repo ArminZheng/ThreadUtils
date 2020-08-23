@@ -1,7 +1,7 @@
-package edu.john.practice;
+package edu.john.practice.singleton;
 
 /**
- * 第一种：急性子式
+ * 第一种：急性子式 2/3 nice
  * （最简洁）
  * 枚举类型：表示该类型对象是有限的几个
  * 我们可以限定为一个，就成了单例
