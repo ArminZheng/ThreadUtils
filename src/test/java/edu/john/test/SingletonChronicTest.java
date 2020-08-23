@@ -14,9 +14,6 @@ public class SingletonChronicTest {
 //        singleton4();
 //        singletonUnsafe4();
         singleton5();
-
-
-
     }
     static void singleton4(){ //单线程版chronic
         Singleton4 s1 = Singleton4.getInstance();
@@ -49,8 +46,7 @@ public class SingletonChronicTest {
         espool.shutdown();
     }
 
-    static void singleton5() throws ExecutionException, InterruptedException {
-        // 下面是线程不安全的情况
+    static void singleton5() throws ExecutionException, InterruptedException {// 下面是线程安全的情况（用synchronized改造）
         Callable<Singleton5> c = new Callable<Singleton5>() {
             @Override
             public Singleton5 call() throws Exception {
